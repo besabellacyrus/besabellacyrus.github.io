@@ -14,36 +14,49 @@ body {
     background-color: #FFF;
     height: 100vh;
 }
-p, small {
+p, small, ul {
     font-family: 'Abel', sans-serif;
     font-size: 2rem;
 }
 h1 {
     font-family: 'bebas_neueregular';
     font-size: 3.5rem;
+    color: #FFF;
+    background-color: #000;
+    opacity: 0.91;
 }
-.img-container > img {
-    width: 100%;
-    height: 406px;
+.app-header h1 {
+    line-height: 0.8;
+}
+.app-header h1:hover {
+    color: #f39c12;
 }
 ul.app-navigation {
     list-style: none;
-    text-align: center;
+    display: inline;
+    color: #FFF;
+    padding: 0;
 }
-ul.app-navigation li {
+.app-navigation li {
     display: inline;
     float: right;
-    margin-left: 51px;
-    font-size: 1rem;
-    border-bottom: 1px dotted;
+    padding-left: 10px;
+    font-size:  1rem;
+    background-color: black;
+    opacity: 0.91;
+    cursor: pointer;
+}
+.app-navigation li:hover {
+    color: #f39c12;
+    font-weight: bold;
+}
+.app-bg-header {
+    background: url('../img/kevin-bhagat-343433.jpg');
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 @media only screen and (max-width: 320px) {
-    ul.app-navigation li {
-    display: inline;
-    text-align: center;
-    float: initial;
-    margin-left: initial;
-    font-size: 1rem;
-    border-bottom: 1px dotted;
-}
 }
