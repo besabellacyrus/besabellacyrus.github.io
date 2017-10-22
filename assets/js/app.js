@@ -7,6 +7,7 @@ var app = new Vue({
     projects: false,
     contact: false,
     appBg:'appBg1',
+    detailShow: 'hide',
   },
   methods: {
     resumeContent: function() {
@@ -38,5 +39,12 @@ var app = new Vue({
         this.resume = false;
         this.appBg = 'appBg4';
     },
+    showDetails: function() {
+        if (this.detailShow == 'show') {
+            this.detailShow = 'hide';
+        } else {
+            this.detailShow = 'show';
+        }
+    }
   }
 })

@@ -16,9 +16,10 @@ body {
 }
 p, small {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #000;
     color: #FFF;
+    padding: 10px;
 }
 h1, h2, ul {
     font-family: 'bebas_neueregular';
@@ -26,9 +27,15 @@ h1, h2, ul {
 ul {
     font-size: 2rem;
 }
-h1, h2 {
+h1 {
     font-size: 3.5rem;
     color: #FFF;
+    background-color: #000;
+    opacity: 0.91;
+}
+h2 {
+    color: #FFF;
+    font-size: 2.5rem;
     background-color: #000;
     opacity: 0.91;
 }
@@ -94,7 +101,49 @@ ul.app-navigation {
     color: #f39c12;
     /*font-weight: bold;*/
 }
+.project-img img {
+    /*width: 363px;
+    height: 259px;*/
+}
 [v-cloak] {
+    display: none;
+}
+img.app-profile-pic {
+    height: 100px;
+}
+ul.app-pl {
+    list-style: none;
+    padding-left: 0;
+}
+ul.app-pl li {
+    display: inline;
+}
+ul.app-pl img {
+    height: 50px;
+}
+.app-img-credit a {
+    font-size: 0.5rem;
+    color: #040404;
+}
+.project-img img {
+    height: 200px;
+    margin-bottom: 10px;
+}
+.app-show-details {
+    cursor: pointer;
+}
+.project-img span {
+    position: absolute;
+    z-index: 9999;
+    top: 31px;
+    left: 34px;
+    background: #000;
+    color: #fff;
+    opacity: 0.86;
+    font-size: 1rem;
+    padding: 21px;
+}
+.hide {
     display: none;
 }
 @media only screen and (max-width: 320px) {
